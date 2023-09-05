@@ -1,0 +1,46 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .error-container {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #333;
+    }
+
+    p {
+        font-size: 18px;
+        color: #777;
+    }
+
+    a {
+        text-decoration: none;
+        color: #007BFF;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+    <div class="error-container">
+        <h1>Erreur 404</h1>
+        <p>Désolé, la page que vous recherchez est introuvable.</p>
+        <p>Retournez à la <a routerLink="">page d'accueil</a>.</p>
+    </div>
+</body>
