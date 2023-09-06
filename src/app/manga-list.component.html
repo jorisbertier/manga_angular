@@ -1,4 +1,14 @@
-<h1>yoooo</h1>
-<ul *ngFor="let manga of mangaList">
-    <li>{{manga.title}}</li>
-</ul>
+<h1>Tous les mangas</h1>
+<div class="row d-flex flex-row"></div>
+
+<div *ngFor="let manga of mangaList" class="card" style="width: 18rem;">
+    <div class="col-12">
+    <img class="card-img-top" src="{{manga.image}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{manga.title}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a routerLink="/manga/{{manga.id}}" class="btn btn-primary">Lire la suite</a>
+    </div>
+  </div>
+</div>
+

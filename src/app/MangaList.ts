@@ -5,21 +5,20 @@ import { Manga } from './entities';
 @Component({
     selector: 'manga-list',
     templateUrl: './manga-list.component.html'
-  })
+    })
 
 export class MangaListComponent {
     mangaList: Manga[] = [];
     
     constructor(private service:MangaService) {
     }
-  
+
     ngOnInit() {
-      this.getManga();
+        this.getManga();
     }
-  
+
     getManga() {
-      this.mangaList = this.service.fetchAll();
-      return this.mangaList;
-      
+        this.mangaList = this.service.fetchAll();
+        return this.mangaList;
     }
-  }
+    }

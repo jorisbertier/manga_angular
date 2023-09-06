@@ -7,6 +7,8 @@ import { HomeComponent } from './home-component/home-component.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MangaListComponent } from './MangaList';
 import { Error404Component } from './error404/error404.component';
+import { MangaDetailsComponent } from './manga-details/manga-details.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { Error404Component } from './error404/error404.component';
     HomeComponent,
     NavBarComponent,
     MangaListComponent,
-    Error404Component
+    Error404Component,
+    MangaDetailsComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

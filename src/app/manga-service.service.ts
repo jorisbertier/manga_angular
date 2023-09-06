@@ -13,5 +13,8 @@ export class MangaService {
     return MANGAS;
   }
 
+  fetchById(id: number) {
+    return MANGAS[id];
+  }
 
 }
