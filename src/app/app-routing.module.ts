@@ -6,6 +6,9 @@ import { Error404Component } from './error404/error404.component';
 import { MangaDetailsComponent } from './manga-details/manga-details.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ContactComponent } from './contact/contact.component';
+import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,6 +16,8 @@ const routes: Routes = [
   {path: 'manga/:id', component: MangaDetailsComponent},
   {path: 'user/:id', component: UserDetailsComponent},
   {path: 'user', component: UserComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'contactReactive', component: ContactReactiveComponent},
   {path: '**', component: Error404Component}
 ];
 

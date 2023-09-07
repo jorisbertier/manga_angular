@@ -22,7 +22,7 @@ export class UserDetailsComponent {
       console.log('UserID:', userId);
       this.getUserById(userId -1) ; */
       this.UserService.fetchById(params['id']).subscribe(data =>{
-       this.user = data;
+      this.user = data;
         
       })
     })
@@ -31,6 +31,5 @@ export class UserDetailsComponent {
   getUserById(id:number) {
     this.user = this.UserService.fetchById(id);
   }
-
 
 }

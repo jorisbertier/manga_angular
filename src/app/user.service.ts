@@ -21,5 +21,6 @@ export class UserService {
   fetchById(id: number) {
     const userUrl = `${this.url}/${id}`;
     return this.http.get<Iuser>(userUrl);
+    // return this.serviceHttpClient.get<IUser[]>(this.url+'/' +id);
   }
 }

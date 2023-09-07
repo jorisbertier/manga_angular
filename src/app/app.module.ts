@@ -12,6 +12,10 @@ import { MangaDetailsComponent } from './manga-details/manga-details.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { ModalComponent } from './modal/modal.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactReactiveComponent } from './contact-reactive/contact-reactive.component';
 
 
 @NgModule({
@@ -24,13 +28,19 @@ import { ModalComponent } from './modal/modal.component';
     MangaDetailsComponent,
     UserComponent,
     UserDetailsComponent,
-    ModalComponent
+    ModalComponent,
+    ContactComponent,
+    ContactReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

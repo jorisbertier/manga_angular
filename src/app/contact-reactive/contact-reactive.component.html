@@ -1,0 +1,8 @@
+<p>contact-reactive works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <input type="text" class="m-3" formControlName="username" ngModel required>
+    <input type="password" class="m-3" formControlName="password" ngModel required>
+
+    <button type="submit" class="btn btn-primary m-3">Login</button>
+</form>

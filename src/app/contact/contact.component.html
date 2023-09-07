@@ -1,0 +1,16 @@
+<p>contact works!</p>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+
+        <input type="text" name="username" ngModel require>
+        <!-- {{ username.length < 2 ? '🛑 ' : '👊'}} -->
+        <small>{{message}}</small>
+        <!-- <div *ngIf="form.value.username.length < 2"> Pas bon</div> -->
+        <br><br>
+    
+    <input type="password" name="password" ngModel require>
+    <small>{{messagePwd}}</small><br><br>
+
+    <button type="submit" [disabled]="!form.valid">Login</button>
+</form>
+<!-- [disabled]="!form.valid" -->
