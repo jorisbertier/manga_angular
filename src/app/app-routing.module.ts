@@ -4,11 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { MangaListComponent } from './MangaList';
 import { Error404Component } from './error404/error404.component';
 import { MangaDetailsComponent } from './manga-details/manga-details.component';
+import { UserComponent } from './user/user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'manga', component: MangaListComponent},
   {path: 'manga/:id', component: MangaDetailsComponent},
+  {path: 'user/:id', component: UserDetailsComponent},
+  {path: 'user', component: UserComponent},
   {path: '**', component: Error404Component}
 ];
 

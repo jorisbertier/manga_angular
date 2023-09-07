@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { MangaListComponent } from './MangaList';
 import { Error404Component } from './error404/error404.component';
 import { MangaDetailsComponent } from './manga-details/manga-details.component';
 import { UserComponent } from './user/user.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { ModalComponent } from './modal/modal.component';
+
 
 @NgModule({
   declarations: [
@@ -18,11 +22,14 @@ import { UserComponent } from './user/user.component';
     MangaListComponent,
     Error404Component,
     MangaDetailsComponent,
-    UserComponent
+    UserComponent,
+    UserDetailsComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
